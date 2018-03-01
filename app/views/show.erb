@@ -4,5 +4,5 @@ Post Content: <%=@post.content%><br>
 
 
 <form action="/posts/<%=@post.id%>/delete" method='post'>
-
+<input type="hidden" value="delete" name="hidden" id="hidden">
 <button type="submit" value="delete">Click to Delete</button> <!-- value case sensitive for rspec, lowercase this time lol, wait needs a button -->
